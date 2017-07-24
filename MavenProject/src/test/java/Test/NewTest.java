@@ -18,6 +18,7 @@ public class NewTest {
 	  App.textbox_Username(gk).sendKeys("mfssuperadm@gmail.com");
 	  App.textbox_Password(gk).sendKeys("12345678");
 	  App.LoginButton(gk).click();
+	  System.out.println("Login Successfull!!!!");
   }
   @BeforeTest
   public void beforeTest() 
@@ -27,7 +28,7 @@ public class NewTest {
 		
   }
 
-  @AfterTest
+  //@AfterTest
   public void afterTest() 
   {
 	  gk.quit();
