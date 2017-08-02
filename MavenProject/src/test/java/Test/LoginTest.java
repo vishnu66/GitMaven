@@ -2,6 +2,7 @@ package Test;
 
 import org.testng.annotations.Test;
 
+import com.org.mavenproject.Browsers;
 import com.org.mavenproject.LoginObjects;
 
 import org.testng.annotations.BeforeTest;
@@ -25,9 +26,10 @@ public class LoginTest {
   @BeforeTest
   public void beforeTest() 
   {
-	  System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\Gecko\\geckodriver.exe");
-		gk=new FirefoxDriver();
-		
+	  //System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\Gecko\\geckodriver.exe");
+		//gk=new FirefoxDriver();
+	  gk = Browsers.firefox();
+	  
   }
 
   //@AfterTest
